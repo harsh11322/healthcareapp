@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jarurat Care</title>
+<link rel="stylesheet" href="./jruratcare.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <span>📞 +91-9911002288</span>
+    <div class="top-links">
+        <a href="#">About</a>
+        <a href="#">Blogs</a>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">Jarurat Care</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Emergency</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button class="quote-btn">Get a Quote</button>
+</header>
+
+<!-- hero -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Medical Equipments</h1>
+        <p>ICU Monitor, Oxygen, Bed at Home</p>
+        <button class="quote-btn">Book Now</button>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <h2>WHAT WE WORK</h2>
+
+    <div class="service-box">
+        <div class="card">Home Care</div>
+        <div class="card">Nursing</div>
+        <div class="card">24/7 Service</div>
+        <div class="card">Affordable</div>
+    </div>
+</section>
+
+  <!-- Chat Toggle Button -->
+<section class="chatbot-whole">
+     <div class="chat-label">Care Chatbot 🤖</div>
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+<!-- Chatbot -->
+<div class="chatbot" id="chatbot">
+    <div class="chat-header">
+        <span>Help Assistant</span>
+        <button onclick="toggleChat()">✖</button>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <div class="bot-message">Hi 👋 How can I help you?</div>
+    </div>
+
+    <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">➤</button>
+    </div>
+</div>
+</section>
+     <!-- contact -->
+<section class="contact">
+    <h2 >Get Support / Join Us</h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+       <button onclick="showForm('patient', this)">Patient Support</button>
+       <button onclick="showForm('volunteer', this)">Volunteer</button>
+       <button onclick="showForm('contact', this)">Contact</button>
+
+    <!-- Patient Form -->
+    <form id="patient" class="form-box">
+        <input type="text" placeholder="Patient Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select>
+            <option>Service Needed</option>
+            <option>ICU Setup</option>
+            <option>Nursing</option>
+            <option>Equipment</option>
+        </select>
+        <textarea placeholder="Patient Condition"></textarea>
+        <button type="submit">Request Support</button>
+    </form>
+
+    <!-- Volunteer Form -->
+    <form id="volunteer" class="form-box" style="display:none;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number">
+        <select>
+            <option>Role</option>
+            <option>Nurse</option>
+            <option>Helper</option>
+            <option>Driver</option>
+        </select>
+        <button type="submit">Join Now</button>
+    </form>
+
+    <!-- Contact Form -->
+    <form id="contact" class="form-box" style="display:none;">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<!-- ABOUT -->
+<section class="about">
+    <div class="about-text">
+        <h2>About Jarurat Care</h2>
+        <p>
+           At Jarurat Care Foundation, we understand that facing cancer can be overwhelming, and no one should have to go through it alone. That’s why we’ve made it our mission to stand by those affected by cancer, offering unwavering support every step of the way. We’re a community-driven NGO dedicated to bringing hope, care, and strength to patients, caregivers, and healthcare professionals across India.
+
+Our focus is on creating a warm and inclusive space where everyone’s needs are heard and met. Whether it’s providing a comforting word, nutritional advice, or practical help, we’re here to make the journey a little easier. We work closely with healthcare providers, volunteers, and generous donors to reach those who need us most, ensuring that no one is left without the support they
+        </p>
+    </div>
+
+  
+</section>
+
+
+
+<!-- FACTS -->
+<section class="facts">
+    <div class="fact">10+ Services</div>
+    <div class="fact">24/7 Support</div>
+    <div class="fact">1000+ Patients</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Jarurat Care | All Rights Reserved</p>
+</footer>
+<script src="./jruratcare.js"></script>
+</body>
+</html>
